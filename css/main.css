@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
+
+
+:root {
+    --mainYellow: #fdbe02;
+    --mainYellow1: #977A36;
+    --mainYellow2: #D6C884;
+    --mainYellow3: #6B4823;
+    --mainBlack: #002336;
+    --mainWhite: #fff;
+    --TransGrey: rgba(0, 0, 0, 0.1);
+    /* --mainWhite: #fff;
+    --mainBlack: #071013;
+    --mainGrey: #9b9999;
+    --TransGrey: rgba(0, 0, 0, 0.1); */
+}
+
+.text-yellow {
+    color: var(--mainYellow);
+}
+
+body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Mali", cursive;
+}
+
+.text-slanted {
+    font-family: "Calligraffitti", cursive;
+}
+
+.btn-yellow {
+    background: var(--mainYellow);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: var(--mainBlack);
+    border-radius: 0 !important;
+}
+
+.btn-yellow:hover {
+    background: var(--mainBlack);
+    color: var(--mainYellow);
+}
+
+.btn-black {
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: var(--mainBlack);
+    border-radius: 0 !important;
+    border: 0.1rem solid var(--mainBlack);
+}
+
+.btn-black:hover {
+    background: var(--mainBlack);
+    color: var(--mainWhite);
+}
+
+/* navbar ////////////////////////////////// */
+.navbar-brand img {
+    width: 75px;
+
+}
+
+.navbar-toggler {
+    outline: none !important;
+    border: none;
+    font-size: 2.2rem;
+    color: var(--mainYellow) !important;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    border-bottom: 0.1rem solid var(--mainWhite);
+}
+
+.nav-active {
+    border-bottom: 0.1rem solid var(--mainYellow);
+}
+
+.navbar-icon {
+    font-size: 1.6rem;
+}
+
+.navbar-cart-icon {
+    color: var(--mainBlack);
+    position: relative;
+}
+
+.navbar-cart-icon:hover {
+    color: var(--mainYellow);
+}
+
+
+
+/* banner ////////////////////////////////// */
+
+.banner {
+    min-height: calc(100vh - 101px);
+    background: url("../imgs/pageBcg/bannerBcg.jpg");
+    /* background: red; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* featured start ////////////////////////////////// */
+
+.featured-container {
+    background: var(--TransGrey);
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-search-icon {
+    background: var(--mainWhite);
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 1.2rem;
+    transform: translateX(110%);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.featured-container:hover .featured-search-icon {
+    transform: translateX(0%);
+}
+
+.featured-store-link {
+    background: var(--mainYellow);
+    color: var(--mainBlack);
+    padding: 0.2rem 0.4rem;
+    position: absolute;
+    right: 0;
+    top: 70%;
+    transform: translateX(110%);
+    transition: all 1s ease-in-out;
+}
+
+.featured-store-link:hover {
+    color: var(--mainBlack);
+}
+
+.featured-container:hover .featured-store-link {
+    transform: translateX(0%);
+}
+
+/* featured end////////////////////////////////// */
+
+
+
+
+/* partner brand */
+
+
+.partners {
+    background: var(--TransGrey);
+}
+
+.carousel-control-prev {
+    font-size: 2.5rem;
+    color: var(--mainBlack) !important;
+    transform: translateX(-200%);
+}
+
+.carousel-control-next {
+    font-size: 2.5rem;
+    color: var(--mainBlack) !important;
+
+    transform: translateX(200%);
+}
+
+/* partner brand end */
+
+
+/* newsletter */
+.form-icon {
+    background: var(--mainGrey);
+    color: var(--mainBlack);
+}
+
+/* skills */
+.skills {
+    background: var(--mainBlack);
+}
+
+.skill-icon {
+    color: var(--mainYellow);
+    font-size: 2rem;
+}
+
+/* footer */
+.footer {
+    background: var(--mainYellow2);
+}
+
+.footer h1 {
+
+    background: linear-gradient(to left, var(--mainYellow), var(--mainYellow1), var(--mainYellow), var(--mainYellow1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-title {
+    border: 0.2rem solid var(--mainYellow);
+    padding: 0.4rem;
+}
+
+.footer-icon {
+    color: var(--mainYellow);
+}
+
+.footer-icon:hover {
+    color: var(--mainWhite);
+}
+
+
+/* //////////////////////Populate pages////////////////////////////////////////////////////////////  */
+
+
+.banner-products,
+.banner-single-product,
+.banner-store {
+    min-height: 60vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        url("../imgs/pageBcg/productsBcg.jpeg") center/cover fixed no-repeat;
+}
+
+.banner-single-product {
+    min-height: 60vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        url("../imgs/pageBcg/singleBcg.jpeg") center/cover fixed no-repeat;
+}
+
+.banner-store {
+    min-height: 60vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)),
+        url("../imgs/pageBcg/storeBcg.jpeg") center/cover fixed no-repeat;
+}
+
+
+/* servicess */
+
+.service-icon {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--mainYellow);
+    background: var(--mainBlack);
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+}
+
+/* categories */
+.categories-link {
+    color: var(--mainBlack);
+    text-decoration: none;
+}
+
+.categories-link:hover {
+    color: var(--mainGrey);
+    text-decoration: none;
+}
+
+.categories-underline {
+    height: 0.1rem;
+    width: 5rem;
+    background: var(--mainYellow);
+}
+
+.category-container {
+    position: relative;
+}
+
+.category-img {
+    transition: all 1s linear;
+}
+
+.category-container:hover .category-img {
+    opacity: 0.5;
+}
+
+.category-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.2rem 3rem 0.2rem 0.2rem;
+    background: var(--mainWhite);
+    color: var(--mainBlack);
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    opacity: 0;
+    transition: all 1s linear;
+    text-decoration: none !important;
+}
+
+.category-link:hover {
+    color: var(--mainGrey);
+}
+
+.category-container:hover .category-link {
+    opacity: 1;
+}
